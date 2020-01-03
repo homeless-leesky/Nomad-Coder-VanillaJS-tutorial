@@ -8,8 +8,7 @@ function paintGreeting(text){
     form.classList.remove(SHOWING_CN);
 
     greeting.classList.add(SHOWING_CN);
-    greeting.innerHTML = `Hello ${text}`;
-
+    greeting.innerHTML = `Hello, ${text}!😈`;
 }
 
 

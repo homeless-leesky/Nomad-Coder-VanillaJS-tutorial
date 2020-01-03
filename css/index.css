@@ -1,12 +1,102 @@
-body {
-    background-color: #ecf0f1;
-    color : #34495e;
+html {
+    overflow: scroll;
+    overflow-x: hidden;
 }
-.form,
-.greetings{
-    display: none;
+body {
+    background-color:#2c3e50;
+    color : white;
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+.clock{
+    font-size: 5em;  
+    width: 100%;
+    text-align: center;
+}
+
+
+ul{
+    height: 280px;
+    overflow:scroll;
+}
+ul li{
+    text-align: center;
+    margin : 0px auto;
+    width: 400px;
+    font-size: 2em;
+    list-style: none;
+    border-top: 1px solid lightgray;
+}
+
+.weatherIcon{
+    margin-right: 8px;
+    width: 60px;
+    height: 60px;
+}
+.weatherInfo{
+    float: right;
+    margin-top: 15px;
+}
+.weather{
+    font-size: 1.2em;
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-right: 20px;
+}
+button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color:gainsboro;
+    margin-left: 20px;
+    font-size: 0.8em;
+}
+
+form{
+    margin: 0px auto;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+
+.form,
+.greetings{
+    text-align: center;
+    font-size: 2.5em;
+    display: none;
+}
 .showing{
     display: block;
 }
+
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+
+
