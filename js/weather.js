@@ -3,11 +3,6 @@ const API_KEY = "";
 const weather = document.querySelector(".js-weather");
 const weather_icon = document.querySelector(".weatherIcon");
 
-
-
-
-
-
 function getweather(lat, lng){
     fetch(
         `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
