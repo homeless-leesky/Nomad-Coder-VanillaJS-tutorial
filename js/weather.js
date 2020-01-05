@@ -1,5 +1,5 @@
 const COORDS = 'coords';
-const API_KEY = "b3c0c29197dca2b6dcfeb8aee2abca67";
+const API_KEY = "b3c0c29197dca2b6dcfeb8aee2abca67"; //Enter your API key. -> Open Weather API
 const weather = document.querySelector(".js-weather");
 const weather_icon = document.querySelector(".weatherIcon");
 
